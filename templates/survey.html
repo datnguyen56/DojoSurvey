@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    <style>
+        .main {
+            width: 600px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 70px;
+            margin-left: 30%;
+        }
+        .survey_box {
+            width: 500px;
+            margin: 30px;
+        }
+        button {
+            background-color: skyblue;
+            margin-left: 400px;
+            box-shadow: 3px 3px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="survey_box">
+            <form action="/result" method="POST">
+                <label for="your_name">Your Name:</label>
+                <input type="text" name="your_name" id="your_name"><br></br>
+                <label for="dojo_location">Dojo Locaion:</label>
+                <select name="dojo_location" id="dojo_location">
+                    <option value="San Jose">San Jose</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Tulsa">Tulsa</option>
+                    <option value="Tysons Corner">Tysons Corner</option>
+                    <option value="East Bay">East Bay</option>
+                </select><br></br>
+                <label for="favorite_language">Favorite Language:</label>
+                    <select name="favorite_language" id="favorite_language">
+                    <option value="Java">Java</option>
+                    <option value="html">HTML</option>
+                    <option value="Python">Python</option>
+                    <option value="Others">Others</option>
+                </select><br></br>
+                <label for="comment">Comment (optional):</label><br></br>
+                <textarea name="comment" id="comment" cols="60" rows="8"></textarea><br></br>
+                <div><button>Submit</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
